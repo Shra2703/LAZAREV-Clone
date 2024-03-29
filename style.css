@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Gilroy-Medium; */
+    font-family: futura;
+
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    background-color: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vw 4vw;
+
+}
+
+nav .nav-elems{
+    text-transform: uppercase;
+    display: flex;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page1 h1{
+    font-size: 8vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -4px;
+}
+
+#page1 h1 svg{
+    width: 5.9vw;
+    height: 5.9vw;
+    border-radius: 50%;
+    background-color: #0DA34E;
+}
+
+#page1 p{
+    font-size: 1vw;
+    text-align: center;
+    /* font-weight: 100; */
+    margin-top: 3vh;
+    letter-spacing: -0.2px;
+    /* line-height: 10px; */
+    color: #e1dcdc;
+}
+
+#div-withBorder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-withBorder h4{
+    border: 1px solid rgb(179, 175, 175);
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: 50;
+    font-size: 1vw;
+    margin-top: 5px;
+    color: #e1dcdc;
+
+}
+
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
