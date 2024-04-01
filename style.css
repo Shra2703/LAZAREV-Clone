@@ -41,27 +41,34 @@ nav .nav-elems {
   z-index: 10;
 }
 
-nav .nav-elems h5 {
+nav .nav-elems h4 {
   font-size: 0.9vw;
   font-weight: 50;
+  cursor: pointer;
 }
 
-nav .nav-elem h5:nth-child(1) {
+nav .nav-elems h4:hover {
+  color: #807e7e;
+}
+
+nav .nav-elem h4 {
   margin-bottom: 30px;
 }
 
 nav .nav-elem h5 {
   margin-bottom: 15px;
+  text-transform: capitalize;
+  font-size: 0.83vw;
+  /* background-color: #0da34e; */
+
+  overflow: hidden;
+  display: none;
 }
 
 nav .nav-elem h5 span {
-  font-size: 0.83vw;
   font-weight: 50;
-  text-transform: capitalize;
-  /* background-color: #0da34e; */
   display: inline-block;
-  opacity: 0;
-
+  /* opacity: 0; */
 }
 
 /* button part of nav element */
@@ -88,6 +95,7 @@ nav button svg {
 #nav-bottom {
   background-color: #111;
   width: 88%;
+  height: 0vh;
   /* height: 26vh; */
   border-bottom: 1px solid #dadada;
   position: absolute;
@@ -112,6 +120,7 @@ nav button svg {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: -4px;
+  line-height: 130px;
 }
 
 #page1 h1 svg {
