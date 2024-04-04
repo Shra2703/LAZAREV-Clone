@@ -4,6 +4,7 @@
   box-sizing: border-box;
   /* font-family: Gilroy-Medium; */
   font-family: futura;
+  /* background-color: #111; */
 }
 html,
 body {
@@ -106,7 +107,7 @@ nav button svg {
 }
 
 #page1 {
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   color: white;
   background-color: #111;
@@ -117,8 +118,8 @@ nav button svg {
 }
 
 .forGap {
-  margin-top: 15vh;
-  margin-bottom: 10vh;
+  margin-top: -10vh;
+  margin-bottom: 8vh;
 }
 
 #page1 h1 {
@@ -162,6 +163,7 @@ nav button svg {
   color: #e1dcdc;
 }
 
+/* Moving Animation div */
 #moving-div {
   /* margin-top: 10vh; */
   position: absolute;
@@ -171,6 +173,7 @@ nav button svg {
   white-space: nowrap;
   overflow: hidden;
   padding: 2vw;
+  /* border: 1px solid white; */
 }
 
 #moving-div .move {
@@ -202,7 +205,6 @@ nav button svg {
   position: absolute;
   left: 0;
   z-index: 2;
-
   top: 0;
 }
 
@@ -221,4 +223,69 @@ nav button svg {
   height: 100vh;
   width: 100%;
   background-color: #111;
+  /* border: 1px solid white; */
+  border-top: 1px solid #333;
+  padding: 0vw 6vw;
+  padding-bottom: 8vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+#page2-left {
+  height: 100%;
+  width: 45%;
+  /* background-color: #7f7878; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3vw 0;
+}
+
+#page2-left p {
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+
+#page2-left h4 {
+  font-size: 1vw;
+  font-weight: 400;
+  text-align: justify;
+  width: 60%;
+}
+
+#page2-right {
+  height: 100%;
+  width: 50%;
+  /* background-color: #999090; */
+}
+
+.right-elem {
+  position: relative;
+  /* background-color: #0da34e; */
+  padding-top: 2vw;
+  height: 25vh;
+  /* padding-bottom: 1vw; */
+  border-top: 1px solid #333;
+  transition: all ease 0.2s;
+}
+
+.right-elem:hover{
+  border-top: 1px solid white;
+}
+
+.right-elem h5 {
+  font-size: 1.22vw;
+  text-transform: capitalize;
+}
+
+.right-elem img {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0;
 }
