@@ -23,7 +23,7 @@ nav {
   width: 100%;
   padding: 2vw 6vw;
   height: 12vh;
-  z-index: 10;
+  z-index: 1220;
   /* border: 1px solid salmon; */
   /* margin-top: 15px; */
 }
@@ -220,7 +220,7 @@ nav button svg {
 }
 
 #page2 {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   background-color: #111;
   /* border: 1px solid white; */
@@ -273,13 +273,15 @@ nav button svg {
   transition: all ease 0.2s;
 }
 
-.right-elem:hover{
+.right-elem:hover {
   border-top: 1px solid white;
 }
 
 .right-elem h5 {
   font-size: 1.22vw;
+  position: relative;
   text-transform: capitalize;
+  z-index: 120;
 }
 
 .right-elem img {
@@ -288,4 +290,43 @@ nav button svg {
   border-radius: 50%;
   object-fit: cover;
   opacity: 0;
+  scale: 0;
+  margin-top: -3vw;
+  z-index: 0;
+}
+
+#page3 {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  background: url(https://assets-global.website-files.com/64a2ab71942e1d57feb6fe39/65f306410543a22950d85603_reel-cover.webp);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
+.page3-center .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.page3-center .icon i {
+  font-size: 3vw;
+  color: #111;
+}
+
+.page3-center h5 {
+  font-size: 1.3vw;
+  background-color: #fff;
+  color: #111;
+  padding: 5px 15px;
+  border-radius: 40px;
 }

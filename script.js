@@ -45,5 +45,35 @@ function navAnimation() {
   });
 }
 
+function imageMousepart2() {
+  let rightElems = document.querySelectorAll(".right-elem");
+  rightElems.forEach(function (elem) {
 
-navAnimation();
+    // mouse enter of image
+    elem.addEventListener("mouseenter", () => {
+      gsap.to(elem.childNodes[3],{
+        opacity: 1,
+        scale: 1
+      })
+    });
+
+    // mouse leave of image
+    elem.addEventListener("mouseleave", () => {
+      gsap.to(elem.childNodes[3],{
+        opacity: 0,
+        scale: 0
+      })
+    });
+
+    elem.addEventListener("mousemove", (dets) => {
+      gsap.to(elem.childNodes[3],{
+        x: dets.x - elem.getBoundingClientRect().x -80,
+        y: dets.y - elem.getBoundingClientRect().y - 100
+      })
+
+    })
+  });
+}
+
+// navAnimation();
+// imageMousepart2();
