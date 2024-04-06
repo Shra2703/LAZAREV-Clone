@@ -48,32 +48,60 @@ function navAnimation() {
 function imageMousepart2() {
   let rightElems = document.querySelectorAll(".right-elem");
   rightElems.forEach(function (elem) {
-
     // mouse enter of image
     elem.addEventListener("mouseenter", () => {
-      gsap.to(elem.childNodes[3],{
+      gsap.to(elem.childNodes[3], {
         opacity: 1,
-        scale: 1
-      })
+        scale: 1,
+      });
     });
 
     // mouse leave of image
     elem.addEventListener("mouseleave", () => {
-      gsap.to(elem.childNodes[3],{
+      gsap.to(elem.childNodes[3], {
         opacity: 0,
-        scale: 0
-      })
+        scale: 0,
+      });
     });
 
     elem.addEventListener("mousemove", (dets) => {
-      gsap.to(elem.childNodes[3],{
-        x: dets.x - elem.getBoundingClientRect().x -80,
-        y: dets.y - elem.getBoundingClientRect().y - 100
-      })
-
-    })
+      gsap.to(elem.childNodes[3], {
+        x: dets.x - elem.getBoundingClientRect().x - 80,
+        y: dets.y - elem.getBoundingClientRect().y - 100,
+      });
+    });
   });
 }
 
+function videoPlay() {
+  let page3Center = document.querySelector(".page3-center");
+  let videoElem = document.querySelector("#page3 video");
+
+  page3Center.addEventListener("click", () => {
+    videoElem.play();
+
+    gsap.to(videoElem, {
+      transform: "scaleX(1) scaleY(1)",
+      opacity: 1,
+      borderRadius: 0,
+      zIndex: 1000,
+    });
+  });
+
+  videoElem.addEventListener("click", () => {
+    videoElem.pause();
+
+    gsap.to(videoElem, {
+      transform: "scaleX(0.7) scaleY(1)",
+      opacity: 1,
+      borderRadius: 0,
+      zIndex: 1000,
+    });
+  });
+
+
+}
+
 // navAnimation();
-// imageMousepart2();
+imageMousepart2();
+videoPlay();

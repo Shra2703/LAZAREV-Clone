@@ -305,28 +305,61 @@ nav button svg {
   justify-content: center;
   align-items: center;
   background-color: #111;
+  /* border: 1px solid white; */
 }
 
 .page3-center .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4vw;
-  border-radius: 50%;
+  /* padding: 4vw; */
+  /* border-radius: 50%; */
   margin-bottom: 10px;
-  background-color: #fff;
+  /* background-color: #fff; */
   cursor: pointer;
+  /* border: 1px solid black; */
+  position: relative;
+  z-index: 100;
+
 }
 
 .page3-center .icon i {
+  padding: 4vw;
+  border-radius: 50%;
+  background-color: #fff;
   font-size: 3vw;
   color: #111;
 }
 
 .page3-center h5 {
-  font-size: 1.3vw;
+  font-size: 0.9vw;
   background-color: #fff;
   color: #111;
   padding: 5px 15px;
   border-radius: 40px;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+  transform: translateY(10%);
+  opacity: 0;
+  position: relative;
+  z-index: 100;
+
+}
+
+.page3-center:hover h5 {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+#page3 video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 30px;
+  object-fit: cover;
+  transform: scaleX(0.7) scaleY(0);
+  opacity: 0;
+  /* display: hidden; */
+  /* z-index: 99999; */
 }
