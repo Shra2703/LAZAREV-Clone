@@ -73,7 +73,7 @@ function imageMousepart2() {
   });
 }
 
-function videoPlay() {
+function page3VideoPlay() {
   let page3Center = document.querySelector(".page3-center");
   let videoElem = document.querySelector("#page3 video");
 
@@ -92,10 +92,10 @@ function videoPlay() {
     videoElem.pause();
 
     gsap.to(videoElem, {
-      transform: "scaleX(0.7) scaleY(1)",
-      opacity: 1,
-      borderRadius: 0,
-      zIndex: 1000,
+      transform: "scaleX(0.7) scaleY(0)",
+      opacity: 0,
+      borderRadius: "30px",
+      zIndex: 0,
     });
   });
 
@@ -104,4 +104,4 @@ function videoPlay() {
 
 // navAnimation();
 imageMousepart2();
-videoPlay();
+page3VideoPlay();
