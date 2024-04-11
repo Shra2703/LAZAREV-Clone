@@ -102,6 +102,23 @@ function page3VideoPlay() {
 
 }
 
+function page6Animation(){
+  let sections = document.querySelectorAll(".sec-right");
+  sections.forEach(function(elem){
+    console.log(elem.childNodes[3])
+    elem.addEventListener("mouseenter", function(){
+      elem.childNodes[3].style.opacity = 1
+      elem.childNodes[3].play()
+    })
+
+    elem.addEventListener("mouseleave", function(){
+      elem.childNodes[3].style.opacity = 0
+      elem.childNodes[3].load()
+    })
+  })
+}
+
 // navAnimation();
 imageMousepart2();
 page3VideoPlay();
+page6Animation();

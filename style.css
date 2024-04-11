@@ -451,7 +451,7 @@ nav button svg {
 }
 
 #page6 {
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   background-color: white;
   position: relative;
@@ -463,8 +463,9 @@ nav button svg {
   align-items: center;
   justify-content: space-between;
   padding: 0vw 6vw;
-  padding-top: 8vw;
+  padding-top: 6vw;
   gap: 9px;
+  /* border: 1px solid; */
 }
 
 .sec-left {
@@ -474,6 +475,10 @@ nav button svg {
   border-top: 2px solid #e6e5e5;
   cursor: pointer;
   transition: 0.5s all ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sec-left:hover {
@@ -488,6 +493,19 @@ nav button svg {
   letter-spacing: -1.4px;
 }
 
+.sec-left button {
+  border-radius: 50px;
+  padding: 23px 15px;
+  font-size: 15px;
+  background-color: #4f5bff;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 20vw;
+  cursor: pointer;
+}
+
 .sec-left p {
   font-size: 1.1vw;
   margin-bottom: 5vw;
@@ -499,8 +517,9 @@ nav button svg {
 .sec-right {
   height: 100%;
   width: 67%;
-  background-color: #0da34e;
+  /* background-color: #0da34e; */
   position: relative;
+  transition: 0.5s all ease;
 }
 
 .sec-right img {
@@ -517,4 +536,32 @@ nav button svg {
   left: 0;
   opacity: 0;
   object-fit: cover;
+  cursor: pointer;
+}
+
+.sec-right .circle {
+  height: 170px;
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4f5bff;
+  border-radius: 50%;
+  padding: 1.7vw;
+  color: #fff;
+  /* opacity: 0; */
+}
+
+.sec-right .circle i {
+  font-size: 1.3vw;
+  margin-left: 5vw;
+}
+
+.sec-right .circle h5 {
+  font-size: 1vw;
+  margin-left: -1vw;
 }
