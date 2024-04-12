@@ -595,6 +595,7 @@ nav button svg {
 
 #page7 #inner .inner-box{
   height: 100%;
+  overflow: hidden;
   width: 60%;
   border-top: 2px solid #a2a2a2;
   display: flex;
@@ -604,6 +605,7 @@ nav button svg {
   padding-top: 35px;
   cursor: pointer;
   transition: 0.3s all ease;
+
 }
 
 #page7 #inner .inner-box:hover{
@@ -617,6 +619,8 @@ nav button svg {
 #page7 #inner .inner-box p{
   text-align: justify;
   font-size: 1vw;
+  transition: 0.5s all ease;
+  z-index: 0;
 }
 
 #page7 #inner .inner-box i{
@@ -637,6 +641,7 @@ nav button svg {
   width: 100%;
   margin-top: 3.5vw;
   position: relative;
+  transition: 0.7s all ease;
 }
 
 #page7 #inner .inner-box .right-inner-box img{
@@ -655,6 +660,7 @@ nav button svg {
   top: 0;
   left: 0;
   opacity: 0;
+
 }
 
 

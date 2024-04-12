@@ -103,7 +103,7 @@ function page3VideoPlay() {
 function page6Animation() {
   let sections = document.querySelectorAll(".sec-right");
   sections.forEach(function (elem) {
-    console.log(elem.childNodes[5]);
+    // console.log(elem.childNodes[5]);
     elem.addEventListener("mouseenter", function () {
       elem.childNodes[3].style.opacity = 1;
       elem.childNodes[3].play();
@@ -126,10 +126,34 @@ function page6Animation() {
 
     elem.addEventListener("mousemove", (dets) => {
       gsap.to(elem.childNodes[5], {
-        x:dets.x - elem.getBoundingClientRect().x - 80,
-        y:dets.y - elem.getBoundingClientRect().y - 100
-      })
-    })
+        x: dets.x - elem.getBoundingClientRect().x - 80,
+        y: dets.y - elem.getBoundingClientRect().y - 100,
+      });
+    });
+  });
+}
+
+function page7Animation() {
+  let innerDiv = document.querySelectorAll(".inner-box");
+  innerDiv.forEach(function (elem) {
+    console.log(elem.childNodes[3].childNodes[3]);
+    // console.log(elem.childNodes[1].childNodes[3]);
+
+    elem.addEventListener("mouseenter", function () {
+      elem.childNodes[3].style.height = "100%";
+      elem.childNodes[1].style.height = "20%";
+      elem.childNodes[3].childNodes[3].style.opacity = 1
+      elem.childNodes[3].childNodes[3].play();
+      elem.childNodes[1].childNodes[3].style.opacity = 0;
+    });
+
+    elem.addEventListener("mouseleave", function () {
+      elem.childNodes[3].style.height = "45%";
+      elem.childNodes[1].style.height = "55%";
+      elem.childNodes[3].childNodes[3].load();
+      elem.childNodes[3].childNodes[3].style.opacity = 1
+      elem.childNodes[1].childNodes[3].style.opacity = 1;
+    });
   });
 }
 
@@ -137,3 +161,4 @@ function page6Animation() {
 imageMousepart2();
 page3VideoPlay();
 page6Animation();
+page7Animation();
