@@ -576,10 +576,9 @@ nav button svg {
   padding: 0 6vw;
   margin-top: 6vw;
   margin-bottom: 6vw;
-
 }
 
-#page7 #inner{
+#page7 #inner {
   padding-left: 22vw;
   display: flex;
   align-items: center;
@@ -589,11 +588,9 @@ nav button svg {
   /* border: 1px solid; */
   gap: 6vw;
   margin-bottom: 10vw;
-
-  
 }
 
-#page7 #inner .inner-box{
+#page7 #inner .inner-box {
   height: 100%;
   overflow: hidden;
   width: 60%;
@@ -605,38 +602,37 @@ nav button svg {
   padding-top: 35px;
   cursor: pointer;
   transition: 0.3s all ease;
-
 }
 
-#page7 #inner .inner-box:hover{
+#page7 #inner .inner-box:hover {
   border-top: 2px solid #2a2929;
 }
 
-#page7 #inner .inner-box h3{
+#page7 #inner .inner-box h3 {
   font-size: 2.5vw;
 }
 
-#page7 #inner .inner-box p{
+#page7 #inner .inner-box p {
   text-align: justify;
   font-size: 1vw;
   transition: 0.5s all ease;
   z-index: 0;
 }
 
-#page7 #inner .inner-box i{
+#page7 #inner .inner-box i {
   font-size: 1.5vw;
   font-weight: 300;
-  margin-left:10px ;
+  margin-left: 10px;
 }
 
-#page7 #inner .inner-box .left-inner-box{
+#page7 #inner .inner-box .left-inner-box {
   height: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#page7 #inner .inner-box .right-inner-box{
+#page7 #inner .inner-box .right-inner-box {
   height: 45%;
   width: 100%;
   margin-top: 3.5vw;
@@ -644,14 +640,13 @@ nav button svg {
   transition: 0.7s all ease;
 }
 
-#page7 #inner .inner-box .right-inner-box img{
+#page7 #inner .inner-box .right-inner-box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-
 }
 
-#page7 #inner .inner-box .right-inner-box video{
+#page7 #inner .inner-box .right-inner-box video {
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -660,11 +655,35 @@ nav button svg {
   top: 0;
   left: 0;
   opacity: 0;
-
 }
 
+#page8 {
+  background-color: #111;
+  width: 100%;
+  height: 70vh;
+  margin-top: 7vw;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
 
+#page8 h3 {
+  font-size: 3.8vw;
+  margin-top: -40px;
+  line-height: 55px;
+}
 
+#page8 .line {
+  width: 90%;
+  height: 1vh;
+  border-top: 1px solid #9f9e9e;
+  margin-top: 6vw;
+}
 
-
-
+#page9 {
+  background-color: #111;
+  width: 100%;
+  height: 70vh;
+}
