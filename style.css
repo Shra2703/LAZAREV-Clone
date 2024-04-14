@@ -731,3 +731,70 @@ nav button svg {
   content: "Services";
   font-size: 1vw;
 }
+
+#page9 #page9-content{
+  width: 100%;
+  /* background-color: #0da34e; */
+  margin-top: 13vh;
+  padding-top: 3vh;
+  border-top: 2px solid white;
+}
+
+#page9 #page9-content h1{
+  font-size: 3vw;
+}
+
+#page9 #page9-content #flex{
+  display: flex;
+  text-transform: uppercase;
+  margin-top: 6vh;
+  align-items: center;
+
+}
+
+#page9 #page9-content #flex h4{
+  border: 1px solid rgb(98, 97, 97);
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 0.8vw;
+}
+#page-container{
+  margin-top: 8vh;
+}
+.page9-elem{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  border-top: 1px solid rgb(105, 103, 103);
+  padding: 4vh 0;
+  padding-bottom: 12vh;
+  color: rgb(241, 229, 229);
+  position: relative;
+}
+
+.page9-elem h3{
+  position: relative;
+z-index: 2;
+  font-size: 1.9vw;
+}
+
+.page9-elem p{
+  width: 60%;
+  font-size: 0.8vw;
+  position: relative;
+z-index: 2;
+}
+
+.page9-elem i{
+  font-size: 1.5vw;
+  position: relative;
+z-index: 2;
+}
+
+.over{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: #333;
+}
