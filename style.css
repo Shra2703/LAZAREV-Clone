@@ -705,6 +705,8 @@ nav button svg {
   /* margin-left: 80px; */
   border: none;
   cursor: pointer;
+  position: sticky;
+  top: 15%;
 }
 
 #page9 > button i {
@@ -732,7 +734,7 @@ nav button svg {
   font-size: 1vw;
 }
 
-#page9 #page9-content{
+#page9 #page9-content {
   width: 100%;
   /* background-color: #0da34e; */
   margin-top: 13vh;
@@ -740,28 +742,27 @@ nav button svg {
   border-top: 2px solid white;
 }
 
-#page9 #page9-content h1{
+#page9 #page9-content h1 {
   font-size: 3vw;
 }
 
-#page9 #page9-content #flex{
+#page9 #page9-content #flex {
   display: flex;
   text-transform: uppercase;
   margin-top: 6vh;
   align-items: center;
-
 }
 
-#page9 #page9-content #flex h4{
+#page9 #page9-content #flex h4 {
   border: 1px solid rgb(98, 97, 97);
   padding: 5px 10px;
   border-radius: 50px;
   font-size: 0.8vw;
 }
-#page-container{
+#page-container {
   margin-top: 8vh;
 }
-.page9-elem{
+.page9-elem {
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
@@ -770,31 +771,80 @@ nav button svg {
   padding-bottom: 12vh;
   color: rgb(241, 229, 229);
   position: relative;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
 }
 
-.page9-elem h3{
+.page9-elem:hover {
+  border-top: 1px solid white;
+  cursor: pointer;
+}
+
+.page9-elem h3 {
   position: relative;
-z-index: 2;
+  z-index: 2;
   font-size: 1.9vw;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
 }
 
-.page9-elem p{
+.page9-elem p {
   width: 60%;
   font-size: 0.8vw;
   position: relative;
-z-index: 2;
+  z-index: 2;
 }
 
-.page9-elem i{
+.page9-elem i {
   font-size: 1.5vw;
   position: relative;
-z-index: 2;
+  z-index: 2;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
 }
 
-.over{
+.over {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   background-color: #333;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  display: none;
+  /* transition: all ease-out 0.7s; */
+}
+
+.page9-elem:hover h3 {
+  padding-left: 1vw;
+}
+
+.page9-elem:hover i {
+  padding-right: 1vw;
+}
+
+.page9-elem:hover .over {
+  opacity: 1;
+  transform: translateY(0);
+  display: initial;
+}
+
+.product {
+  border-top: 2px solid white;
+  padding-top: 3vh;
+  margin-top: 2vw;
+}
+.toggle{
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle i{
+  font-size: 2.5vw;
+}
+
+details {
+  position: relative;
+}
+
+summary::marker {
+  content: "";
 }

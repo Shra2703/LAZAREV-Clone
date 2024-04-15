@@ -1,3 +1,6 @@
+let flag1 = true;
+let flag2 = true;
+
 function navAnimation() {
   let nav = document.querySelector("nav");
 
@@ -142,7 +145,7 @@ function page7Animation() {
     elem.addEventListener("mouseenter", function () {
       elem.childNodes[3].style.height = "100%";
       elem.childNodes[1].style.height = "20%";
-      elem.childNodes[3].childNodes[3].style.opacity = 1
+      elem.childNodes[3].childNodes[3].style.opacity = 1;
       elem.childNodes[3].childNodes[3].play();
       elem.childNodes[1].childNodes[3].style.opacity = 0;
     });
@@ -151,14 +154,70 @@ function page7Animation() {
       elem.childNodes[3].style.height = "45%";
       elem.childNodes[1].style.height = "55%";
       elem.childNodes[3].childNodes[3].load();
-      elem.childNodes[3].childNodes[3].style.opacity = 1
+      elem.childNodes[3].childNodes[3].style.opacity = 1;
       elem.childNodes[1].childNodes[3].style.opacity = 1;
     });
   });
 }
+
+function page9Toggle(){
+
+  function page9Toggle1() {
+    document.querySelector(".toggle").innerHTML = `
+                       <h1>UI UX Design</h1>
+                      <i class="ri-arrow-drop-down-line"></i>
+        `;
+    flag1 = false;
+    document.querySelector(".toggle").addEventListener("click", function (elem) {
+      console.log(elem);
+      if (flag1) {
+        document.querySelector(".toggle").innerHTML = `
+                       <h1>UI UX Design</h1>
+                      <i class="ri-arrow-drop-down-line"></i>
+        `;
+        flag1 = false;
+      } else {
+        document.querySelector(".toggle").innerHTML = `
+                      <h1>UI UX Design</h1>
+                      <i class="ri-arrow-drop-up-line"></i>
+        `;
+        flag1 = true;
+      }
+    });
+  }
+  
+  function page9Toggle2() {
+    document.querySelector(".toggle1").innerHTML = `
+                       <h1>Product Design</h1>
+                      <i class="ri-arrow-drop-down-line"></i>
+        `;
+    flag1 = false;
+    document.querySelector(".toggle1").addEventListener("click", function (elem) {
+      console.log(elem);
+      if (flag1) {
+        document.querySelector(".toggle1").innerHTML = `
+                       <h1>Product Design</h1>
+                      <i class="ri-arrow-drop-down-line"></i>
+        `;
+        flag1 = false;
+      } else {
+        document.querySelector(".toggle1").innerHTML = `
+                      <h1>Product Design</h1>
+                      <i class="ri-arrow-drop-up-line"></i>
+        `;
+        flag1 = true;
+      }
+    });
+  }
+  page9Toggle1();
+  page9Toggle2();
+
+}
+
 
 // navAnimation();
 imageMousepart2();
 page3VideoPlay();
 page6Animation();
 page7Animation();
+page9Toggle();
