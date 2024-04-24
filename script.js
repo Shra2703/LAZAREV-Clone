@@ -160,60 +160,76 @@ function page7Animation() {
   });
 }
 
-function page9Toggle(){
-
+function page9Toggle() {
   function page9Toggle1() {
     document.querySelector(".toggle").innerHTML = `
                        <h1>UI UX Design</h1>
                       <i class="ri-arrow-drop-down-line"></i>
         `;
     flag1 = false;
-    document.querySelector(".toggle").addEventListener("click", function (elem) {
-      console.log(elem);
-      if (flag1) {
-        document.querySelector(".toggle").innerHTML = `
+    document
+      .querySelector(".toggle")
+      .addEventListener("click", function (elem) {
+        console.log(elem);
+        if (flag1) {
+          document.querySelector(".toggle").innerHTML = `
                        <h1>UI UX Design</h1>
                       <i class="ri-arrow-drop-down-line"></i>
         `;
-        flag1 = false;
-      } else {
-        document.querySelector(".toggle").innerHTML = `
+          flag1 = false;
+        } else {
+          document.querySelector(".toggle").innerHTML = `
                       <h1>UI UX Design</h1>
                       <i class="ri-arrow-drop-up-line"></i>
         `;
-        flag1 = true;
-      }
-    });
+          flag1 = true;
+        }
+      });
   }
-  
+
   function page9Toggle2() {
     document.querySelector(".toggle1").innerHTML = `
                        <h1>Product Design</h1>
                       <i class="ri-arrow-drop-down-line"></i>
         `;
     flag1 = false;
-    document.querySelector(".toggle1").addEventListener("click", function (elem) {
-      console.log(elem);
-      if (flag1) {
-        document.querySelector(".toggle1").innerHTML = `
+    document
+      .querySelector(".toggle1")
+      .addEventListener("click", function (elem) {
+        console.log(elem);
+        if (flag1) {
+          document.querySelector(".toggle1").innerHTML = `
                        <h1>Product Design</h1>
                       <i class="ri-arrow-drop-down-line"></i>
         `;
-        flag1 = false;
-      } else {
-        document.querySelector(".toggle1").innerHTML = `
+          flag1 = false;
+        } else {
+          document.querySelector(".toggle1").innerHTML = `
                       <h1>Product Design</h1>
                       <i class="ri-arrow-drop-up-line"></i>
         `;
-        flag1 = true;
-      }
-    });
+          flag1 = true;
+        }
+      });
   }
   page9Toggle1();
   page9Toggle2();
-
 }
 
+function page11func() {
+  let clutter = "";
+  let data = ["Web3", "E-commerce", "RealEstate", "FinTech", "🔥 AI & ML"];
+
+  for (let i = 0; i < 5; i++) {
+    clutter += `
+    <div class="page11-box">
+    <div class="page11-upper">${data[i]}<i class="ri-arrow-right-up-line"></i></div>
+    <div class="page11-lower"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ab libero amet aliquid mollitia perferendis temporibus vitae! Culpa adipisci repellat temporibus. Aut, inventore repellat!</p></div>
+  </div>
+    `;
+  }
+  document.querySelector("#page11-div").innerHTML = clutter;
+}
 
 // navAnimation();
 imageMousepart2();
@@ -221,3 +237,4 @@ page3VideoPlay();
 page6Animation();
 page7Animation();
 page9Toggle();
+page11func();

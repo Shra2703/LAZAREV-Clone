@@ -538,8 +538,7 @@ nav button svg {
   object-fit: cover;
   cursor: pointer;
 }
-
-.sec-right .circle {
+.circle {
   height: 170px;
   width: 170px;
   display: flex;
@@ -559,12 +558,12 @@ nav button svg {
   transition: all ease 0.2s;
 }
 
-.sec-right .circle i {
+.circle i {
   font-size: 1.3vw;
   margin-left: 5vw;
 }
 
-.sec-right .circle h5 {
+.circle h5 {
   font-size: 1vw;
   margin-left: -1vw;
 }
@@ -675,7 +674,7 @@ nav button svg {
   line-height: 55px;
 }
 
-#page8 .line {
+.line {
   width: 88%;
   height: 1vh;
   border-top: 1px solid #9f9e9e;
@@ -693,6 +692,7 @@ nav button svg {
   align-items: flex-start;
   justify-content: space-between;
   color: #fff;
+  /* padding-bottom: 18vw; */
 }
 
 #page9 > button {
@@ -832,12 +832,12 @@ nav button svg {
   padding-top: 3vh;
   margin-top: 2vw;
 }
-.toggle{
+.toggle {
   display: flex;
   justify-content: space-between;
 }
 
-.toggle i{
+.toggle i {
   font-size: 2.5vw;
 }
 
@@ -847,4 +847,85 @@ details {
 
 summary::marker {
   content: "";
+}
+
+#page10 {
+  background-color: #111;
+  width: 100%;
+  min-height: 95vh;
+  padding: 0 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+
+#page10 .line {
+  margin-top: 17vw;
+  margin-bottom: 2vw;
+  width: 100%;
+}
+
+#page10 h6 {
+  /* margin-top: -150px; */
+  font-size: 1vw;
+  text-align: center;
+}
+
+#page10 p {
+  font-size: 2.24vw;
+  text-align: center;
+  width: 83%;
+  text-align: center;
+}
+
+#page11 {
+  background-color: #111;
+  width: 100%;
+  /* background-color: #0da34e; */
+  /* min-height: 95vh; */
+  padding: 0 6vw;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  padding-top: 5vw;
+  height: 120vh;
+  gap: 13px;
+}
+
+#page11-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 13px;
+
+  height: 80%;
+}
+
+.page11-box {
+  width: 32.6%;
+  height: 47%;
+  padding: 20px;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.page11-upper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8vw;
+}
+
+.page11-lower p {
+  font-size: 0.9vw;
+  text-align: justify;
+  word-spacing: -2px;
+}
+
+#page11 .circle{
+  color: #0da34e;
 }
